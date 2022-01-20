@@ -15,7 +15,7 @@ SEMVER=( ${GOTENBERG_VERSION//./ } )
 VERSION_LENGTH=${#SEMVER[@]}
 
 if [ $VERSION_LENGTH -ne 3 ]; then
-    echo "$VERSION is not semver."
+    echo "$SEMVER is not semver."
     exit 1
 fi
 

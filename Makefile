@@ -6,8 +6,8 @@ help: ## Show the help
 it: build build-tests ## Initialize the development environment
 
 GOLANG_VERSION=1.17
-DOCKER_REPOSITORY=gotenberg
-GOTENBERG_VERSION=snapshot
+DOCKER_REPOSITORY ?= gotenberg
+GOTENBERG_VERSION ?= snapshot
 GOTENBERG_USER_GID=1001
 GOTENBERG_USER_UID=1001
 NOTO_COLOR_EMOJI_VERSION=v2.028 # See https://github.com/googlefonts/noto-emoji/releases.
